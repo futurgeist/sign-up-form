@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'norse-bold';
+    src: url('./fonts/Norse-Bold.otf');
+    /* Add additional font formats here if needed */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    background: url('images/cloudy-nature-landscape-by-lake.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'norse-bold', sans-serif;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.author-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.author {
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right-section {
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+input {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-top: 5px;
+
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    width: 250px;
+    align-self: stretch;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    font-weight: bold;
+    color: #0f0e1093;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 0;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
